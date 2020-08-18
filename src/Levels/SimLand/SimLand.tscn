@@ -1,0 +1,17 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://src/Levels/SimLand/SimLand.gd" type="Script" id=1]
+[ext_resource path="res://src/Actors/Agent/Agent.tscn" type="PackedScene" id=2]
+[ext_resource path="res://src/Levels/SimLand/sprites/black_tile.png" type="Texture" id=3]
+
+[node name="SimLand" type="Node2D"]
+script = ExtResource( 1 )
+Agent = ExtResource( 2 )
+
+[node name="Agents" type="Node" parent="."]
+
+[node name="Background" type="Sprite" parent="."]
+position = Vector2( 960.754, 541.945 )
+texture = ExtResource( 3 )
+region_enabled = true
+region_rect = Rect2( 0, 0, 1920, 1080 )
